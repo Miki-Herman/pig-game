@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="x-icon" href="pig.png" />
+    <title>Pig Game</title>
+  </head>
+  
+  <body>
+    <main>
+
+      <!-- Modal window -->
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>Rules</h1>
+        <p>
+          This is called the Pig game. You and your friend roll the dice. 
+          You are trying to collect 100 points, but if you throw 1 your 
+          current score gets deleted and your it's your firend's turn. 
+          You can keep your current score by pressing HOLD, but then 
+          it's your friend's turn.
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
+   
+      <!-- Player 1 -->
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+
+      <!-- Player 2 -->
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <!-- The dice image -->
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+
+      <!-- buttons -->
+      <button class="btn show-modal">Rules</button>
+      <button class="btn btn--new">New game</button>
+      <button class="btn btn--roll">Roll dice</button>
+      <button class="btn btn--hold">Hold</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
